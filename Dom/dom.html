@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New concept of Dom</title>
+</head>
+<body style="background-color: rgba(0, 0, 0, 0.885); color :white;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+
+    <script>
+      function addLanguage(langName){
+        const li = document.createElement('li');      // TO create aur append new list element 
+        li.innerHTML=`${langName}`;
+        document.querySelector('.language').appendChild(li)
+      }
+      addLanguage("java")
+
+
+//Above are not optimised way to create element 
+
+function lagOpti(langName){
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(langName))    // This is optimised ways to do that
+    document.querySelector('.language').appendChild(li)
+}
+lagOpti("javaScript")
+
+// Editing of value of list 
+
+
+
+    </script>
+</body>
+</html>
