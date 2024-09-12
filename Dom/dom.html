@@ -11,13 +11,13 @@
     </ul>
 
     <script>
+        //Adding list item 
       function addLanguage(langName){
         const li = document.createElement('li');      // TO create aur append new list element 
         li.innerHTML=`${langName}`;
         document.querySelector('.language').appendChild(li)
       }
       addLanguage("java")
-
 
 //Above are not optimised way to create element 
 
@@ -29,6 +29,22 @@ function lagOpti(langName){
 lagOpti("javaScript")
 
 // Editing of value of list 
+const editLang= document.querySelector("li:nth-child(1)")
+const newele= Document.createElement('li')
+newele.textContent="jai"
+editLang.replaceWith(newele);
+
+//edit
+const firstlang= document.querySelector("li:first-child")
+firstlang.outerHTML='<li> jai shree ram </li>'
+
+
+
+// remove ehe value 
+const lastele = document.querySelector('li:nth-child(2)')
+lastele.remove()
+
+
 
 
 
