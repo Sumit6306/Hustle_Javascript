@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+}
+
+.boxy{
+    height: 20px;
+    margin: 5px;
+    border: 5px solid black;
+}
