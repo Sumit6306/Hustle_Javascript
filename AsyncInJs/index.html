@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HMM BOLO !</h1>
+    <button id="Stop">Stop</button>
+</body>
+<script>
+const HeySumit = function(){
+   document.querySelector('h1').innerText="Jai Shree Ram"  // This type of project should be used where you show the pop up of sale , discount or any type of pop-up comes ..
+}
+const change = setTimeout(HeySumit,10000);
+
+document.querySelector('#Stop').addEventListener('click',function(){
+clearTimeout(change)
+console.log("Changed...");
+
+})
+
+</script>
+</html>

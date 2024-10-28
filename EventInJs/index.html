@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events In JavaScript</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: aliceblue;
+        }
+    .container{
+        height:100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+        
+    .box{
+            height: 200px;
+            width: 200px;
+            margin: 20px;
+            background-color: black;
+            padding: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>   
+    </div>
+</body>
+<Script>
+  // There are few Event listerner in javascript are click ,onclick,mousemove,mouseup,mousedown-----etc
+    document.querySelector('.container').addEventListener('click',function(e){
+    if(e.target.classList.contains('box')){
+        e.target.remove();
+
+    }
+    })
+
+</Script>
+</html>
